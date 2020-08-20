@@ -24,7 +24,6 @@ public class Triangle {
         double ab = first.distance(second);
         double ac = first.distance(third);
         double bc = second.distance(third);
-        double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             /* написать формулу для расчета площади треугольника. */
             double period = period(ab, ac, bc);
