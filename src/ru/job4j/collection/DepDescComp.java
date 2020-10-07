@@ -11,12 +11,6 @@ public class DepDescComp implements Comparator<String> {
         if (compare != 0) {
             return compare;
         }
-        for (int i = 1; i < leftSplit.length && i < rightSplit.length; i++) {
-            compare = leftSplit[i].compareTo(rightSplit[i]);
-            if (compare != 0) {
-                return compare;
-            }
-        }
-        return Integer.compare(leftSplit.length, rightSplit.length);
+        return o1.compareTo(o2);
     }
 }
